@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontur.LogPacker", "Kontur.LogPacker\Kontur.LogPacker.csproj", "{3F88AEB0-4119-4F4F-B43D-046131822B3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogPacker", "LogPacker\LogPacker.csproj", "{3F88AEB0-4119-4F4F-B43D-046131822B3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontur.LogPacker.SubmitHelper", "Kontur.LogPacker.SubmitHelper\Kontur.LogPacker.SubmitHelper.csproj", "{19B7445C-9B3C-4B6D-A594-58159FFFBDA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogPacker.SubmitHelper", "LogPacker.SubmitHelper\LogPacker.SubmitHelper.csproj", "{19B7445C-9B3C-4B6D-A594-58159FFFBDA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontur.LogPacker.SelfCheck", "Kontur.LogPacker.SelfCheck\Kontur.LogPacker.SelfCheck.csproj", "{36CDD57D-7F51-4B6C-816D-181FC0B41880}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogPacker.SelfCheck", "LogPacker.SelfCheck\LogPacker.SelfCheck.csproj", "{36CDD57D-7F51-4B6C-816D-181FC0B41880}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontur.LogPackerGZip", "Kontur.LogPackerGZip\Kontur.LogPackerGZip.csproj", "{AAE211BE-4DAF-483A-ACA6-4FA32148984C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogPackerGZip", "LogPackerGZip\LogPackerGZip.csproj", "{AAE211BE-4DAF-483A-ACA6-4FA32148984C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

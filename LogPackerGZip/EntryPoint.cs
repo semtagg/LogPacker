@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Kontur.LogPackerGZip
+namespace LogPackerGZip
 {
     /// <summary>
     /// An example compressor implementation using GZip.

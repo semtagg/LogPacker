@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Kontur.LogPacker.SelfCheck
+namespace LogPacker.SelfCheck
 {
     internal static class EntryPoint
     {

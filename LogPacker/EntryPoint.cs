@@ -1,4 +1,4 @@
-﻿namespace Kontur.LogPacker
+﻿namespace LogPacker
 {
     internal static class EntryPoint
     {

@@ -6,7 +6,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Reflection;
 
-namespace Kontur.LogPacker.SelfCheck
+namespace LogPacker.SelfCheck
 {
     internal class SolutionChecker
     {

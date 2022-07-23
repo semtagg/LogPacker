@@ -4,25 +4,25 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 
-namespace Kontur.LogPacker.SubmitHelper
+namespace LogPacker.SubmitHelper
 {
     internal static class EntryPoint
     {
         public static void Main()
         {
             var path = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory);
-            var desiredPathSuffix = "Kontur.LogPacker/Kontur.LogPacker.SubmitHelper/bin/Release/netcoreapp2.1/".Replace('/', Path.DirectorySeparatorChar);
+            var desiredPathSuffix = "LogPacker/LogPacker.SubmitHelper/bin/Release/netcoreapp2.1/".Replace('/', Path.DirectorySeparatorChar);
 
             if (!path.EndsWith(desiredPathSuffix))
                 throw new Exception("Unexpected base directory! Please make sure to run SubmitHelper in Release configuration.");
 
             var solutionRoot = Path.GetFullPath(Path.Combine(path, "../../../../"));
-            var logPackerProjectPath = Path.GetFullPath(Path.Combine(solutionRoot, "Kontur.LogPacker/Kontur.LogPacker.csproj"));
+            var logPackerProjectPath = Path.GetFullPath(Path.Combine(solutionRoot, "LogPacker/LogPacker.csproj"));
 
             if (!File.Exists(logPackerProjectPath))
                 throw new Exception($"Unexpected directory structure! File '{logPackerProjectPath}' does not exist.");
 
-            var zipPath = Path.GetFullPath(Path.Combine(solutionRoot, "Kontur.LogPacker.zip"));
+            var zipPath = Path.GetFullPath(Path.Combine(solutionRoot, "LogPacker.zip"));
             var filesToPack = TraverseDirectory(solutionRoot)
                 .Where(file => !Path.GetRelativePath(solutionRoot, file).Split(Path.DirectorySeparatorChar).Any(s => IgnoredSubfolders.Contains(s)))
                 .Where(file => Path.GetExtension(file) != ".zip");

@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 
-namespace Kontur.LogPacker.SelfCheck
+namespace LogPacker.SelfCheck
 {
     internal class SolutionPublisher
     {
